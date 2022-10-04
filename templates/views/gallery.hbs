@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saraswati Shishu Mandir</title>
+    <link rel="stylesheet" href="scss/gallery.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="gallery-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body style="background: linear-gradient(  #ceb92c,#2a2a2a);">
+    {{>header}}
+    
+    <div class="full-img" id="fullImgBox">
+        <img src="image/modified-bg-1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="image/modified-bg-1.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-2.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-3.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-4.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-1.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-2.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-3.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-4.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    {{>footer}}
+
+    <script src="js/resp.js"></script>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saraswati Shishu Mandir</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="scss/style.css">
+    <!-- Bootsrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Font Awesome CSS Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body style="background: linear-gradient(  #ceb92c,#2a2a2a);">
+    {{>header}}
+    <!-- Admissin Section -->
+    <section class="Admission-first-section">
+        <div class="Admission-first-section-container">
+            <div class="admission-first-section-box1">
+                <h1>Registration & Admission</h1>
+                <ol style="margin-left: 26px;">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                </ol>
+            </div>
+            <div class="admission-first-section-box2">
+                <h1>Fee payment procedure</h1>
+                <ol style="margin-left: 26px;">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
+                </ol>
+            </div>
+            
+        </div>
+        <div class="Admission-first-section-form">
+            
+            <form action="/register" class="Admission-ask-query-form" method="POST">
+                <h1 style="color: #f39f9f;">Ask Query</h1>
+                <div>
+                    <label for="fname"></label>
+                    <input type="text" placeholder="Name" id="name" name="name" value="">
+                </div>
+                <br>
+                <div>
+                     <label for="email"></label>
+                    <input type="email" placeholder="Email" id="email" name="email" value="">
+                </div>
+                <br>
+                <div>
+                     <label for="phone"></label>
+                    <input type="text" placeholder="Mo.number" id="phone" name="phone" value="">
+                </div>
+                <br>
+                <br>
+                <div>
+                     <label for="date"></label>
+                    <input type="date"  placeholder="Date" id="date" name="date" value=""> 
+                </div>
+               
+                <br>
+                <br>
+                <div>
+                    Ask your Query: <br><textarea name="write_text"  cols="30" rows="10" style="width: 114px;"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Submit" name="submit">
+                    <input type="reset" value="Reset now">
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    {{>footer}}
+    <script src="js/resp.js"></script>
+</body>
+
+</html>

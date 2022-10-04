@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saraswati Shishu Mandir</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="scss/style.css">
+    <!-- Bootsrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Font Awesome CSS Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    {{>header}}
+    <!-- About Us Section  -->
+    
+    <main class="about-main">
+        <div class="about-sarswati-shishu-mandir" style="text-align: center; font-size: 40px; margin-top: 10px;">ABOUT
+            SARASWATI SHISHU MANDIR</div>
+        <section class="about-image about-background">
+        </section>
+    </main>
+    <section class="about-first-section">
+        <div class="about-first-section-middle">
+            <div class="about-first-section-box1">
+            <h1>
+                INTRODUCTION
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem nisi quidem ad aut in repellat ipsam
+                repellendus laborum adipisci iusto! Natus vero recusandae fugit odit possimus dolore velit molestias
+                illo, dolorum hic blanditiis laboriosam quam dolores doloribus incidunt voluptatem quo quas quibusdam
+                numquam nisi! Nemo.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos soluta cum molestiae, dolore
+                impedit ipsa earum et optio necessitatibus dolores quaerat rem illum sequi commodi iure odio nobis
+                libero voluptate aut. Suscipit, vero distinctio tempore dicta soluta quas eius nobis asperiores sint.
+                </p>
+        </div>
+        <div class="about-first-section-box2">
+            <img src="image/bg2.jpg" alt="">
+        </div>
+        </div>
+    </section>
+    <section class="about-second-section">
+        <div class="about-second-section-middle">
+            <div class="about-second-section-box1">
+            <img src="image/bg1.jpg" alt="">
+        </div>
+        <div class="about-second-section-box2">
+            <h1>
+                OUR MISSION
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem nisi quidem ad aut in repellat ipsam
+                repellendus laborum adipisci iusto! Natus vero recusandae fugit odit possimus dolore velit molestias
+                illo, dolorum hic blanditiis laboriosam quam dolores doloribus incidunt voluptatem quo quas quibusdam
+                numquam nisi! Nemo.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos soluta cum molestiae, dolore
+                .</p>
+        </div>
+        <div class="about-second-section-box3">
+            <h1>
+                OUR VISSION
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem nisi quidem ad aut in repellat ipsam
+                repellendus laborum adipisci iusto! Natus vero recusandae fugit odit possimus dolore velit molestias
+                illo, dolorum hic blanditiis laboriosam quam dolores doloribus incidunt voluptatem quo quas quibusdam
+                numquam nisi! Nemo.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos soluta cum molestiae, dolore
+                </p>
+        </div>
+        </div>
+    </section>
+    <!-- About Us Sectin End! -->
+
+    {{>footer}}
+    <script src="js/resp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var waypoint = new Waypoint({
+        element: document.getElementsByClassName("about-first-section"),
+        
+        handler: function (direction) {
+            $(".about-first-section-box1").addClass("animate__animated animate__backInRight");
+            $(".about-first-section-box2").addClass("animate__animated animate__backInLeft");
+            
+            
+        },
+        offset:'75%'
+      })
+
+      var waypoint = new Waypoint({
+        element: document.getElementsByClassName("about-second-section"),
+        
+        handler: function (direction) {
+            $(".about-second-section-box1").addClass("animate__animated animate__backInRight");
+            $(".about-second-section-box2").addClass("animate__animated animate__backInDown");
+            $(".about-second-section-box3").addClass("animate__animated animate__backInLeft");
+        },
+        offset:'75%'
+      })
+        
+
+    </script>
+
+</body>
+
+</html>
