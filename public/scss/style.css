@@ -11,7 +11,8 @@
     display: flex;
     /* margin-bottom: 20px; */
     /* background: rgb(188 197 255 / 70%); */
-    background: linear-gradient( rgb(0, 200, 255), rgb(37, 87, 250)) 
+    /* background: linear-gradient( rgb(0, 200, 255), rgb(37, 87, 250))  */
+    background: rgb(127 112 112 / 70%) url('/image/header3.jpg');
 }
 
 .header-l{
@@ -388,27 +389,34 @@
 }
 
 /* ------------AboutUs---------- */
+.about_section{
+    
+    background: linear-gradient(  #ceb92c,#2a2a2a);
+}
 .about-image{
     height: 50vh;
     
 }
-
+.about-sarswati-shishu-mandir{
+    font-size: 28px;
+}
 .about-main{
-    background-color: #d3f7e1!important;
+    /* background-color: #d3f7e1!important; */
     height: 60vh;
     display: block;
-    
+    background: linear-gradient(  #ceb92c,#2a2a2a);
 }
 .about-background{
-    background: rgb(92 85 85 / 70%) url('/image/bg1.jpg');
+    background: rgb(92 85 85 / 70%) url('/image/header3.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
 .about-first-section{
     display: flex;
-    background-color: #D9EEE1!important;
+    /* background-color: #D9EEE1!important; */
     padding-top: 100px;
-    
+    /* background: linear-gradient(  #ceb92c,#2a2a2a); */
+    color: whitesmoke;
 }
 .about-first-section-middle{
     width: 80%;
@@ -435,6 +443,8 @@
     /* margin: 40px; */
     width: 100%;
     box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
+    border: 3px solid #0d0678;
+    border-radius: 27px;
 }
 
 .about-second-section-box1 img{
@@ -443,15 +453,27 @@
     margin: 10px; */
     /* border: 5px solid #37704b; */
     /* margin: 65px; */
+    border: 3px solid #0d0678;
+    border-radius: 27px;
     width: 100%;
     box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
 }
+
+.about-second-section-box1 img:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.about-first-section-box2 img:hover{
+    transform: scale(1.1, 1.1);
+}
+
 .about-second-section{
     display: flex;
-    background-color: #D9EEE1!important;
-    
+    /* background-color: #D9EEE1!important; */
+    /* background: linear-gradient(  #ceb92c,#2a2a2a); */
     padding-top: 100px;
     padding-bottom: 100px;
+    color: whitesmoke;
     
 }
 .about-second-section-middle{
@@ -477,7 +499,7 @@
 }
 .about-second-section-box1{
     flex-basis: 30%;
-    
+    padding-top: 20px;
 }
 
 /* ------------Admission--------- */
@@ -487,25 +509,27 @@
     /* margin-top: 10px; */
     justify-content: space-between;
     background: linear-gradient(  #ceb92c,#2a2a2a);
+    
 }
 .Admission-first-section-container{
      flex-basis: 40%;
+     color: whitesmoke;
 }
 .admission-first-section-box1{
-    background-color: #e3bfbf;
+    /* background-color: #e3bfbf; */
     padding: 43px;
     width: 55vw;
     margin: 60px;
-    box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
-    
+    /* box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px; */
+    box-shadow: 2px 2px  8px 1px,-2px -2px  8px 1px;
 }
 .admission-first-section-box2{
-    background-color: #96eccc;
+    /* background-color: #96eccc; */
     padding: 43px;
     width: 55vw;
     margin: 60px;
-    box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
-    
+    /* box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px; */
+    box-shadow: 2px 2px  8px 1px,-2px -2px  8px 1px;
 }
 form{
     background-color: #31598b;
@@ -534,23 +558,25 @@ form{
 
 }
 .Examination-first-section-box1{
-    background-color: #7d76e5;
+    /* background-color: #7d76e5; */
     padding: 43px;
     width: 55vw;
     margin: 60px;
-    box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
+    /* box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px; */
+    box-shadow: 2px 2px  8px 1px,-2px -2px  8px 1px;
     
 }
 .Examination-first-section-box2{
-    background-color: #25f3a6;
+    /* background-color: #25f3a6; */
     padding: 43px;
     width: 55vw;
     margin: 60px;
-    box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
+    box-shadow: 2px 2px  8px 1px,-2px -2px  8px 1px;
     
 }
 .Examination-first-section-container{
     flex-basis: 40%;
+    color: whitesmoke;
 }
 .Examination-first-section-form{
     
@@ -578,10 +604,11 @@ form{
     min-height: 80vh;
     margin-top: 40px;
     overflow-x: auto;
+    color: whitesmoke;
     
 }
 .acad-table{
-    box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
+   box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
    width: 80%;
    border: #000000;
    margin: auto;
@@ -617,12 +644,12 @@ form{
 .contactUs-first-section-table{
     width: 80%;
     margin: auto;
-    box-shadow: 5px 10px  18px 1px,-5px -5px  12px 1px;
+    box-shadow: 5px 10px  18px 1px whitesmoke,-5px -5px  12px 1px whitesmoke;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 .contactUs-first-section{
-    background-color: #eee0d0;
+    /* background-color: #eee0d0; */
     min-height: 100vh;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -630,6 +657,7 @@ form{
     width: 100%; */
     /* margin: auto;
     margin-bottom: 20px; */
+    background: linear-gradient(  #ceb92c,#2a2a2a);
 }
 .contactUS-table th{
     border: 2px solid rgb(1 1 1);
@@ -761,7 +789,7 @@ form{
     border: 2px solid red;
 }
 /* submitted box*/
-submitted-box{
+.submitted-box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -860,6 +888,10 @@ submitted-box{
     .secondHalf-box1 img{
         width: 60vw;
     }
+
+    .secondHalf-box1{
+        padding-right: 29px;
+    }
     /* .image-container{
         flex-direction: column;
         
@@ -875,13 +907,15 @@ submitted-box{
     } */
     .firstHalf-box1-aboutus{
        width: 80vw;
-        
+       padding: 20px; 
     }
     .firstHalf-box1-ourmission{
         width: 80vw;
+        padding: 20px;
     }
     .firstHalf-box1-ourvission{
         width: 80vw;
+        padding: 20px;
     }
     
     
@@ -1028,3 +1062,18 @@ submitted-box{
     
 }
 }
+
+
+
+
+
+
+@media screen and (max-width: 730px) {
+    .about-first-section{
+        padding-top: 88px;
+    }
+
+    .about-sarswati-shishu-mandir{
+        font-size: 22px;
+    }
+  }
